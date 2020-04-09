@@ -42,7 +42,7 @@ namespace MusicRoom.Controllers
             {
                 return Ok(new PagedResponse<ArtistViewModel>(artists));
             }
-
+            //dicky
             var paginationResponse = PaginationHelpers.CreatePaginatedResponse(_userService, paginationFilter, artists);
 
             return Ok(paginationResponse);
